@@ -48,13 +48,15 @@ def main():
             n = a["name"]
             if not n.lower().endswith(".sprx"):
                 continue
-            kind = "debug" if "debug" in n.lower() else "release"
+            if "debug" in n.lower():  # regular builds only
+                continue
+            kind = "release"
             if kind in found:
                 print(f"warning: {version} has several {kind} .sprx assets; using {found[kind]['name']}")
                 continue
             found[kind] = a
         builds = []
-        for kind in ("release", "debug"):  # release build ahead of debug
+        for kind in ("release",):
             a = found.get(kind)
             if not a:
                 continue
@@ -81,12 +83,9 @@ def main():
             versions.append({"version": version, "builds": builds})
     if not versions:
         sys.exit("no .sprx builds found; leaving repo unchanged")
-    latest = {}
-    for kind in ("release", "debug"):
-        for v in versions:
-            if any(b["build"] == kind for b in v["builds"]):
-                latest[kind] = v["version"]
-                break
+    # No debug builds are published; point "debug" at the same version, as the
+    # updater's own README example does when a version has no debug build.
+    latest = {"release": versions[0]["version"], "debug": versions[0]["version"]}
     doc = {"builds": "apr-emu", "buildsVersion": 2,
            "repository": f"https://github.com/{REPO}",
            "latest": latest, "versions": versions}
