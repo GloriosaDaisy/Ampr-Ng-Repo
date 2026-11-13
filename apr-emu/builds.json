@@ -1,0 +1,113 @@
+{
+  "builds": "apr-emu",
+  "buildsVersion": 2,
+  "repository": "https://github.com/quer3q/ampr-emu-ng",
+  "latest": {
+    "release": "0.3.5",
+    "debug": "0.3.5"
+  },
+  "versions": [
+    {
+      "version": "0.3.5",
+      "builds": [
+        {
+          "build": "release",
+          "file": "libSceAmpr.sprx-0.3.5",
+          "bytes": 751504,
+          "sha256": "998f2029b250d954725f864b57f2eee72aefbfb88054a3f1c3df550d4d6c8261"
+        },
+        {
+          "build": "debug",
+          "file": "libSceAmpr.sprx-0.3.5-debug",
+          "bytes": 869168,
+          "sha256": "a76c0336d667b486ba1a30b43a23281563dc323a20589cb28bc2454a70af581b"
+        }
+      ]
+    },
+    {
+      "version": "0.3.4",
+      "builds": [
+        {
+          "build": "release",
+          "file": "libSceAmpr.sprx-0.3.4",
+          "bytes": 712144,
+          "sha256": "7d1bb260f954b755ed687733e52ccfa38c31440a9b88a6fbba5b3b75e08bfa26"
+        },
+        {
+          "build": "debug",
+          "file": "libSceAmpr.sprx-0.3.4-debug",
+          "bytes": 819776,
+          "sha256": "717299ddd8122716ba11c89e03cc56d05207d0cae2ef898da8a9a65536640997"
+        }
+      ]
+    },
+    {
+      "version": "0.3.3",
+      "builds": [
+        {
+          "build": "release",
+          "file": "libSceAmpr.sprx-0.3.3",
+          "bytes": 701376,
+          "sha256": "1c1051f91bc7cba19b15362b2b832114b53a4c3d6193f50c90fdf1ae5d78d268"
+        },
+        {
+          "build": "debug",
+          "file": "libSceAmpr.sprx-0.3.3-debug",
+          "bytes": 785120,
+          "sha256": "1ae61d604fd2da60728175a37f700a1283a8ceb0c36e6f28770ab663215ab364"
+        }
+      ]
+    },
+    {
+      "version": "0.3.2",
+      "builds": [
+        {
+          "build": "release",
+          "file": "libSceAmpr.sprx-0.3.2",
+          "bytes": 697072,
+          "sha256": "9a8f553a68d4e6e6be11bd9f8d5519b5faa68560761881966abff1dd65bf19f7"
+        },
+        {
+          "build": "debug",
+          "file": "libSceAmpr.sprx-0.3.2-debug",
+          "bytes": 779360,
+          "sha256": "5e4f1fcbfb83c9beb06d892dcd807a7f077bd54aa57cefa1d712b6f067ddae5d"
+        }
+      ]
+    },
+    {
+      "version": "0.3.1",
+      "builds": [
+        {
+          "build": "release",
+          "file": "libSceAmpr.sprx-0.3.1",
+          "bytes": 694256,
+          "sha256": "bdd93ce2fbcc2d0986b16d77604cc0770d994ccc124b9051ba9f53aeac39f56f"
+        },
+        {
+          "build": "debug",
+          "file": "libSceAmpr.sprx-0.3.1-debug",
+          "bytes": 776224,
+          "sha256": "b767fdf25b341e0fb52c5c758f58d2d1ac71251312d5eda43d61ec6ae0d57ce9"
+        }
+      ]
+    },
+    {
+      "version": "0.3.0",
+      "builds": [
+        {
+          "build": "release",
+          "file": "libSceAmpr.sprx-0.3.0",
+          "bytes": 694192,
+          "sha256": "5f39ca8ebe169aa15d8a8ba8ec2f9cd4195f509d55daaf4b4edbfa80b145035c"
+        },
+        {
+          "build": "debug",
+          "file": "libSceAmpr.sprx-0.3.0-debug",
+          "bytes": 776112,
+          "sha256": "d6655263b85ecf27fc12736a9a290088be34f1d184164747160b1d14768dcb6a"
+        }
+      ]
+    }
+  ]
+}
