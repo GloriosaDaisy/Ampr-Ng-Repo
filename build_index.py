@@ -38,7 +38,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     versions, keep, seen = [], {"builds.json"}, set()
     for rel in all_releases():  # API order: newest first
-        if rel.get("draft"):
+        if rel.get("draft") or rel.get("prerelease"):  # stable releases only
             continue
         version = re.sub(r"[^A-Za-z0-9._-]+", "-", rel["tag_name"].lstrip("vV"))
         if not version or version in seen:
