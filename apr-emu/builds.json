@@ -3,10 +3,21 @@
   "buildsVersion": 2,
   "repository": "https://github.com/quer3q/ampr-emu-ng",
   "latest": {
-    "release": "0.4.1",
-    "debug": "0.4.1"
+    "release": "0.5.0",
+    "debug": "0.5.0"
   },
   "versions": [
+    {
+      "version": "0.5.0",
+      "builds": [
+        {
+          "build": "release",
+          "file": "libSceAmpr.sprx-0.5.0",
+          "bytes": 715264,
+          "sha256": "7379e49953d8f14f26b45ff06a863ecea56aa90a60ba3d5a375f61c52618a174"
+        }
+      ]
+    },
     {
       "version": "0.4.1",
       "builds": [
